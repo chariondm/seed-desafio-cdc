@@ -1,0 +1,12 @@
+@WebApi_HostAddress = http://localhost:5011
+
+### Cria um novo autor
+POST {{WebApi_HostAddress}}/api/v1/autores
+Accept: application/json
+Content-Type: application/json
+
+{
+    "nome": "Teste - {{$guid}}",
+    "email": "email{{$guid}}@teste.com",
+    "descricao": "Teste descrição {{$guid}} {{$guid}} {{$guid}}"
+}
